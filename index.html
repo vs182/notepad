@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/6812a5e4e0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./public/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="dropdown">
+            <button>File</button>
+        </div>
+        <div class="dropdown">
+            <button>Edit</button>
+        </div>
+        <div class="dropdown">
+            <button>View</button>
+        </div>
+        <div class="dropdown">
+            <button>Help</button>
+        </div>
+    </div>
+    <div id="toolbar">
+        <button style="position: relative;" title="open">
+            <i style="position: absolute;top: 2%;" class="fas fa-folder"></i>
+            <input type="file" id="myFile">
+            
+        </button>
+        <button id="cut" title="cut">
+            <i class="fas fa-cut"></i>
+        </button > <button title="Copy"  >
+            <i class="fas fa-copy"></i>
+        </button> <button>
+            <i class="fas fa-paste"></i>
+        </button>
+        <button id="dwn-btn">
+            <i class="fas fa-download"></i>
+        </button>
+        <input id="title" placeholder="untitled" type="text">
+    </div>
+    <div id="main">
+        <textarea id="myTextArea" name="S1" autofocus=""></textarea>
+    </div>
+    <script src="./public/app.js"></script>
+</body>
+
+</html>
